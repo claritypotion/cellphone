@@ -6,6 +6,7 @@ if(life_cellphone_remotePlayer != _caller) exitWith {};
 private _radio = call TFAR_fnc_activeSwRadio;
 private _channel = _radio call TFAR_fnc_getSwChannel;
 
+life_cellphone_online = false;
 life_cellphone_frequency = life_cellphone_baseFrequency;
 life_cellphone_busy = false;
 life_cellphone_callingTo = objNull;

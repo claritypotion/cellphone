@@ -1,6 +1,7 @@
 private _remotePlayer = [_this,0,"",[""]] call BIS_fnc_param;
 private _frequency = [_this,1,"",[""]] call BIS_fnc_param;
 
+life_cellphone_online = true;
 life_cellphone_frequency = _frequency;
 life_cellphone_baseFrequency = [_radio, _channel] call TFAR_fnc_GetChannelFrequency;
 life_cellphone_remotePlayer = _remotePlayer;
