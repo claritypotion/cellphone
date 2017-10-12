@@ -20,4 +20,4 @@ life_cellphone_remotePlayer = _playerToCall;
 life_cellphone_callingTo = _playerToCall;
 
 life_cellphone_frequency = str(round(random(4999) + 45000));
-[player, life_cellphone_frequency] remoteExec ['life_fnc_cellphone_makeCall', _playerToCall];
+[player, life_cellphone_frequency] remoteExec ['life_fnc_cellphone_requestCall', _playerToCall];

@@ -7,6 +7,10 @@ life_cellphone_remotePlayer = _remotePlayer;
 [_radio, _channel, _frequency] call TFAR_fnc_SetChannelFrequency;
 
 
+player setVariable ["tf_sendingDistanceMultiplicator",1000,true];
+player setVariable ["tf_receivingDistanceMultiplicator",1000,true];
+player setVariable ["TF_terrain_interception_coefficient", 1, true];
+
 // Проверяем говорит ли с нами другой игрок каждые 5 минут
 while {life_cellphone_busy} do {
   sleep(5);
@@ -15,3 +19,4 @@ while {life_cellphone_busy} do {
     [_remotePlayer] call ['life_fnc_endCall'];
   }
 }
+
